@@ -18,3 +18,8 @@ Nas configurações do repositório, abra Pages, selecione Deploy from a branch 
 - documentos contém os materiais de consulta.
 
 As alterações publicadas na branch main ficam disponíveis após a conclusão da publicação do GitHub Pages.
+
+
+## Catálogo original
+
+O PDF original do catálogo está anexado à [versão de testes v1.0.0](https://github.com/sisttech-games/soatvr-help/releases/tag/v1.0.0). O botão de catálogo da Central aponta para esse download. Os outros PDFs ficam na pasta documentos.
