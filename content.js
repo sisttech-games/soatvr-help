@@ -1,7 +1,7 @@
 export const supportUrl = "https://suporte.soat.solutions/";
 export const nomidUrl = "https://portal.nomid.tech/";
 const documentFiles = {"libfile_fb2376debd9481918edd053809c027a5": "catalogo-imersoes.pdf", "libfile_3a7549748ef0819193c4e237973c6136": "nomid-tutorial.pdf", "libfile_114d666e58408191b6378c88e43d6b37": "soatvr-2026.pdf"};
-const libraryFile = id => "./documentos/" + documentFiles[id];
+const libraryFile = id => id === "libfile_fb2376debd9481918edd053809c027a5" ? "https://github.com/sisttech-games/soatvr-help/releases/download/v1.0.0/catalogo-imersoes.pdf" : "./documentos/" + documentFiles[id];
 const trainingUrl = "https://drive.google.com/drive/folders/1BzBtiePnnogNPxMjgNBhjZNXqp5QOUxL";
 export const documents = [
   {id:"cat-pdf", title:"Catálogo de Imersões", summary:"Fichas originais por ano e série, com objetivos e interações do livro-guia.", url:libraryFile("libfile_fb2376debd9481918edd053809c027a5")},
