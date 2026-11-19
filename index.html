@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Guias, atualizações e comunidade do projeto SOATVR.">
+  <title>Central de Informação do SOATVR</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Ir para o conteúdo</a>
+  <header class="top">
+    <div class="shell top-inner">
+      <a class="brand" href="#inicio" aria-label="SOATVR, início"><span class="brand-icon" data-icon="orbit"></span><span>SOAT<span class="cyan">VR</span><small>CENTRAL DE INFORMAÇÃO</small></span></a>
+      <nav aria-label="Menu principal"><a href="#inicio" class="active">Início</a><a href="#atualizacoes">Atualizações</a><a href="#guias">Guias</a><a href="#imersoes">Catálogo</a><a href="#experiencia-t1m">Experiência T1M</a></nav>
+      <a class="btn outline top-support" href="https://suporte.soat.solutions/" target="_blank" rel="noopener"><span data-icon="headset"></span> Suporte</a>
+    </div>
+  </header>
+  <main id="principal">
+    <div id="home-page">
+    <section class="hero" id="inicio">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal"></span> REALIDADE VIRTUAL NA EDUCAÇÃO</p>
+          <h1>Central de Informação<br><em>do SOATVR<span>.</span></em></h1>
+          <p class="intro">Encontre guias, acompanhe as atualizações e conte com o T1M para levar as imersões à sua sala de aula.</p>
+          <form class="search" id="search"><span data-icon="search"></span><label class="sr" for="query">Buscar na central</label><input id="query" type="search" placeholder="Busque por uma dúvida, guia ou equipamento…" autocomplete="off" required><button type="submit">Buscar <span data-icon="arrow"></span></button></form>
+          <div class="shortcuts"><button data-article="inicio">Primeiros passos</button><button data-search="Nomid">MDM Nomid</button><button data-search="PICO Neo3">PICO Neo3</button><a href="#imersoes">Catálogo de imersões</a></div>
+        </div>
+        <div class="hero-art">
+          <div class="rings" aria-hidden="true"><i></i><i></i><i></i><b></b><b></b><b></b></div>
+          <img class="mascot" src="./assets/t1m.webp" alt="T1M, mascote oficial do SOATVR, usando um headset de realidade virtual" fetchpriority="high">
+          <button class="guide-call" data-guide><span class="guide-orbit" data-icon="spark"></span><span><strong>Oi, eu sou o T1M!</strong><small>Seu guia no SOATVR</small></span><span data-icon="arrow"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell content">
+      <div class="overview">
+        <section id="atualizacoes">
+          <div class="section-heading"><div><p class="eyebrow">CHANGELOG</p><h2>Atualizações</h2></div><button class="text-link" id="all-releases">Ver histórico <span data-icon="arrow"></span></button></div>
+          <div class="releases" id="releases"></div>
+        </section>
+        <aside id="suporte" class="support">
+          <span class="tile cyan-tile" data-icon="headset"></span>
+          <h2>Precisa de suporte?</h2>
+          <p>Abra o chat oficial para pedir ajuda ou solicitar a criação do perfil da escola no MDM.</p>
+          <a class="btn primary" href="https://suporte.soat.solutions/" target="_blank" rel="noopener">Falar com o suporte oficial <span data-icon="external"></span></a>
+          <button class="text-link" data-article="mdm-conta">Como solicitar uma conta MDM <span data-icon="arrow"></span></button>
+        </aside>
+      </div>
+
+      <section id="guias" class="block">
+        <div class="section-heading"><div><p class="eyebrow">BASE DE CONHECIMENTO</p><h2>Guias e primeiros passos</h2></div></div>
+        <div class="onboarding">
+          <img class="tutorial-icon" src="./assets/tutorial.webp" alt="Ícone do aplicativo Primeiros Passos · Tutorial" width="62" height="62" loading="lazy">
+          <div><h3>Primeira aula com o SOATVR</h3><p>Da conferência da estação ao teste do Modo Aula e do aplicativo Primeiros Passos · Tutorial.</p></div>
+          <button class="btn primary" data-article="inicio">Abrir passo a passo <span data-icon="arrow"></span></button>
+        </div>
+        <div class="guide-grid" id="articles"></div>
+        <div class="resource-group" id="materiais">
+          <h3>Materiais de consulta</h3>
+          <div class="resource-links" id="documents"></div>
+        </div>
+      </section>
+
+      <section id="experiencia-t1m" class="block experience" aria-labelledby="experience-title">
+        <div class="experience-heading">
+          <div>
+            <h2 id="experience-title">Experiência <em>T1M</em></h2>
+            <p>O Experiência T1M é um editor para criar e organizar experiências em ambientes 3D. Escolha um cenário, adicione objetos e ajuste sua composição para transformar suas ideias em espaços imersivos.</p>
+          </div>
+          <a class="btn primary experience-download" href="https://sisttechstudios.itch.io/experiencia-t1m" target="_blank" rel="noopener">Baixar para Windows <span data-icon="external"></span></a>
+        </div>
+        <img class="experience-banner" src="./assets/experiencia-banner.webp" width="2048" height="682" alt="Robô T1M com óculos de realidade virtual em um cenário azul" loading="lazy">
+        <h3 class="gallery-title">Guias do Experiência T1M</h3>
+        <div class="experience-grid" id="experience-guides"></div>
+        <h3 class="gallery-title">Telas do editor</h3>
+        <div class="experience-shots">
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-inicio.webp" alt="Menu com opções para criar ou carregar uma experiência e abrir o tutorial" width="1917" height="1078" loading="lazy">
+            <span>Tela inicial</span>
+          </button>
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-cenarios.webp" alt="Editor com a Sala de Aula e a lista de cenários disponíveis" width="1917" height="1078" loading="lazy">
+            <span>Cenários</span>
+          </button>
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-quiz.webp" alt="Quiz na sala de aula e painel de propriedades do objeto selecionado" width="1917" height="1078" loading="lazy">
+            <span>Quiz e propriedades</span>
+          </button>
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-midias.webp" alt="Quiz, imagem 2D e visualizador de imagens 360° em uma sala de aula" width="1917" height="1078" loading="lazy">
+            <span>Mídias 2D e 360°</span>
+          </button>
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-composicao.webp" alt="Robô T1M, projetor, quiz e quadro de imagem posicionados no cenário" width="1917" height="1078" loading="lazy">
+            <span>Composição da cena</span>
+          </button>
+          <button class="experience-shot" type="button" data-experience-shot>
+            <img src="./assets/experiencia-publicacao.webp" alt="Painel de transmissão no editor com o status dos dispositivos conectados" width="1917" height="1078" loading="lazy">
+            <span>Publicação no VR</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="pico block" aria-labelledby="pico-title">
+        <div class="pico-photo"><img src="./assets/pico.webp" alt="Headset PICO Neo3 da linha empresarial" loading="lazy"></div>
+        <div class="pico-copy"><p class="eyebrow">PARCEIRO DE TECNOLOGIA</p><h2 id="pico-title">PICO <em>Neo3</em></h2><p>Conheça o headset da PICO, da ByteDance, utilizado nas estações SOATVR. Confira como preparar o equipamento para a primeira imersão.</p><button class="btn outline" data-article="pico">Abrir guia do PICO Neo3 <span data-icon="arrow"></span></button><a href="https://business.picoxr.com/global/products/neo3-pro-eye" target="_blank" rel="noopener" class="text-link">PICO Business <span data-icon="external"></span></a></div>
+      </section>
+
+      <section id="imersoes" class="block">
+        <div class="section-heading"><div><p class="eyebrow">MUNDO T1M</p><h2>Catálogo de imersões</h2><p>Busque por título ou tema e refine por ano, série ou componente curricular.</p></div><img class="mundo-logo" src="./assets/mundo-t1m.webp" alt="Logo Mundo T1M" loading="lazy"></div>
+        <div class="catalog">
+          <div class="catalog-filters">
+            <label>Buscar imersões<input id="catalog-query" type="search" placeholder="Ex.: astronomia, história ou energia"></label>
+            <label>Ano ou série<select id="catalog-stage"><option value="">Todos</option></select></label>
+            <label>Componente curricular<select id="catalog-subject"><option value="">Todos</option></select></label>
+          </div>
+          <div class="catalog-meta"><p id="catalog-count" role="status"></p><a id="catalog-pdf" class="text-link" target="_blank" rel="noopener">Abrir catálogo original <span data-icon="external"></span></a></div>
+          <div id="catalog-results" class="catalog-results"></div>
+          <div id="catalog-pages" class="catalog-pages" aria-label="Paginação do catálogo"></div>
+        </div>
+        <h3 class="gallery-title">Imersões em destaque</h3>
+        <div class="immersions" id="gallery"></div>
+        <button id="more-immersions" class="btn outline">Ver mais imersões <span data-icon="arrow"></span></button>
+      </section>
+    </div>
+    </div>
+    <article id="guide-page" class="shell tutorial-page" aria-labelledby="guide-title" hidden></article>
+  </main>
+  <footer><div class="shell foot"><a class="brand" href="#inicio"><span class="brand-icon" data-icon="orbit"></span><span>SOAT<span class="cyan">VR</span><small>CENTRAL DE INFORMAÇÃO</small></span></a><span>Sisttech Tecnologia Educacional</span><a href="https://suporte.soat.solutions/" target="_blank" rel="noopener">Suporte oficial</a></div></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div class="modal"><button class="close" aria-label="Fechar" data-icon="close"></button><div id="dialog-body"></div></div></dialog>
+</body>
+</html>
